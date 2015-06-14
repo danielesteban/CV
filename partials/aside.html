@@ -1,0 +1,17 @@
+<h1>
+	<a href="#/">Daniel Esteban Nombela</a>
+</h1>
+<nav>
+	<li class="header">
+		Prototipos
+	</li>
+	<li data-ng-class-odd="'odd'" data-ng-class="{active: active === project.url}" data-ng-repeat="project in projects">
+		<a href="#/project/{{project.url}}">{{project.shortTitle || project.title}}</a>
+	</li>
+</nav>
+<footer>
+	<a href="mailto:dani@gatunes.com">
+		<i class="fa fa-envelope-square"></i>
+		<span>dani@gatunes.com</span>
+	</a>
+</footer>

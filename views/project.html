@@ -1,0 +1,32 @@
+<h1>
+	{{project.title}}
+</h1>
+<div class="deviceWrap ng-class:{portrait:project.portrait}">
+	<div class="device">
+		<iframe data-ng-if="iframe" data-ng-src="{{iframe}}"></iframe>
+		<slides data-ng-if="project.slides" data-slides="project.slides"></slides>
+	</div>
+</div>
+<div class="links">
+	<li data-ng-if="project.desktop">
+		<a href="{{project.desktop}}" target="_blank">
+			<i class="fa fa-desktop"></i>
+			Versión Web
+		</a>
+	</li>
+	<li data-ng-if="project.android">
+		<a data-ng-dialog="partials/android.html" data-ng-dialog-scope="this" target="_blank">
+			<i class="fa fa-android"></i>
+			Versión Android
+		</a>
+	</li>
+</div>
+<div class="info">
+	<ul class="tags">
+		<li data-ng-repeat="tag in project.tags">
+			<i class="fa fa-tag"></i>{{tag}}
+		</li>
+	</ul>
+	<p data-ng-repeat="paragraph in description" data-ng-bind-html="paragraph"></p>
+</div>
+<checkerboard></checkerboard>

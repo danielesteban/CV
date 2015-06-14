@@ -1,0 +1,13 @@
+{
+	"name": "Deployer",
+	"version": "0.0.1",
+	"author": "Daniel Esteban Nombela <dani@dabuten.co>",
+	"dependencies": {
+		"charm": "latest",
+		"closurecompiler": "latest",
+		"fs-extra": "latest",
+		"less": "latest",
+		"ng-annotate": "latest"
+	},
+	"private": true
+}
