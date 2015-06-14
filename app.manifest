@@ -1,0 +1,22 @@
+CACHE MANIFEST
+
+# 8757dd70209b77425c1454a26f4a14b6
+
+CACHE:
+/Portfolio/?8077dd4d38cf40cc31b3c70d764c554e
+/Portfolio/screen.css?dfd92d34c98d6c3bfab554c356fe4f76
+/Portfolio/lib.js?ea73a79291b7038526a7f1f80adfd56a
+/Portfolio/app.js?6037e7c0e1b369a00a1190f842f3dd77
+
+FALLBACK:
+/Portfolio/ /Portfolio/?8077dd4d38cf40cc31b3c70d764c554e
+/Portfolio/screen.css /Portfolio/screen.css?dfd92d34c98d6c3bfab554c356fe4f76
+/Portfolio/lib.js /Portfolio/lib.js?ea73a79291b7038526a7f1f80adfd56a
+/Portfolio/app.js /Portfolio/app.js?6037e7c0e1b369a00a1190f842f3dd77
+
+NETWORK:
+/Portfolio/app.manifest
+/Portfolio/fonts/
+/Portfolio/img/
+/Portfolio/projects/
+*

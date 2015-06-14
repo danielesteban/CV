@@ -1,0 +1,20 @@
+CACHE MANIFEST
+
+# 62479beb9e3aa15585db0f96b3573ce3
+
+CACHE:
+/Portfolio/projects/CFC/?febc0aeb0e7a6bf274de8192109724f9
+/Portfolio/projects/CFC/screen.css?c229af2a8bced5a86f0f80a8fec3c2cb
+/Portfolio/projects/CFC/lib.js?6ba0c48d294a5642ef8f93726db17ee7
+/Portfolio/projects/CFC/app.js?c01b8450eb72a4c281ea412e98fa62ec
+
+FALLBACK:
+/Portfolio/projects/CFC/ /Portfolio/projects/CFC/?febc0aeb0e7a6bf274de8192109724f9
+/Portfolio/projects/CFC/screen.css /Portfolio/projects/CFC/screen.css?c229af2a8bced5a86f0f80a8fec3c2cb
+/Portfolio/projects/CFC/lib.js /Portfolio/projects/CFC/lib.js?6ba0c48d294a5642ef8f93726db17ee7
+/Portfolio/projects/CFC/app.js /Portfolio/projects/CFC/app.js?c01b8450eb72a4c281ea412e98fa62ec
+
+NETWORK:
+/Portfolio/projects/CFC/app.manifest
+/Portfolio/projects/CFC/fonts/
+*

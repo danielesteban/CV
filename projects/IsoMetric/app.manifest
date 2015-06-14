@@ -1,0 +1,20 @@
+CACHE MANIFEST
+
+# dbe4af0d80f6e1fb03c95c264f721c7d
+
+CACHE:
+/Portfolio/projects/IsoMetric/?a6ef350b1994e303ecffd600911e2c4e
+/Portfolio/projects/IsoMetric/screen.css?0bc2cfb98de3044b0ec5e24b2ec68c96
+/Portfolio/projects/IsoMetric/lib.js?7fe59e4c6892c17eb95a7a202c50c0fb
+/Portfolio/projects/IsoMetric/app.js?a5fe3b1b18a8729eaea11ba9914a196a
+
+FALLBACK:
+/Portfolio/projects/IsoMetric/ /Portfolio/projects/IsoMetric/?a6ef350b1994e303ecffd600911e2c4e
+/Portfolio/projects/IsoMetric/screen.css /Portfolio/projects/IsoMetric/screen.css?0bc2cfb98de3044b0ec5e24b2ec68c96
+/Portfolio/projects/IsoMetric/lib.js /Portfolio/projects/IsoMetric/lib.js?7fe59e4c6892c17eb95a7a202c50c0fb
+/Portfolio/projects/IsoMetric/app.js /Portfolio/projects/IsoMetric/app.js?a5fe3b1b18a8729eaea11ba9914a196a
+
+NETWORK:
+/Portfolio/projects/IsoMetric/app.manifest
+/Portfolio/projects/IsoMetric/fonts/
+*
