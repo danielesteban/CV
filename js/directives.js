@@ -19,6 +19,9 @@ angular.module('Portfolio.directives', [])
 
 			var canvas = angular.element('<canvas>')[0],
 				canvasContext = canvas.getContext('2d'),
+				favicon = angular.element('<canvas>')[0],
+				faviconContext = favicon.getContext('2d'),
+				faviconTag = angular.element('<link>'),
 				renderer = angular.element('<canvas>')[0],
 				ctx = renderer.getContext('2d'),
 				ticksPerFrame = 1000 / 10,
@@ -94,10 +97,43 @@ angular.module('Portfolio.directives', [])
 					canvasContext.rect(0, 0, canvas.width, canvas.height);
 					canvasContext.fillStyle = canvasContext.createPattern(renderer, "repeat");
 					canvasContext.fill();
+
+					favicon.width = favicon.width;
+
+					[
+						[triangleHalfSize, 0], 
+						[0, triangleSize],
+						[triangleSize, triangleSize],
+						[triangleHalfSize, triangleSize, true]
+					].forEach(function(pos, i) {
+						var x = pos[0], y = pos[1];
+						
+						i += numTriangles;
+						if(!colors[i]) colors[i] = color();
+						colors[i].addNoise();
+
+						faviconContext.beginPath();
+						if(pos[2]) {
+							faviconContext.moveTo(x, y);
+							faviconContext.lineTo(x + triangleHalfSize, y + triangleSize + 1);
+							faviconContext.lineTo(x + triangleSize, y);
+						} else {
+							faviconContext.moveTo(x, y + triangleSize);
+							faviconContext.lineTo(x + triangleHalfSize, y);
+							faviconContext.lineTo(x + triangleSize, y + triangleSize);
+						}
+						faviconContext.fillStyle = colors[i].rgb();
+						faviconContext.fill();
+						faviconTag.attr('href', favicon.toDataURL('image/png'));
+					});
 				};
+
+			$window.document.getElementsByTagName('head')[0].appendChild(faviconTag.attr('rel', 'icon').attr('type', 'image/png')[0]);
 
 			renderer.width = asideWidth;
 			renderer.height = triangleSize * 12;
+			favicon.width = triangleSize * 2;
+			favicon.height = triangleSize * 2;
 			resize();
 			render();
 			element.append(canvas);
