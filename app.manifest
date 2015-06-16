@@ -1,18 +1,18 @@
 CACHE MANIFEST
 
-# 92ad3d75fae5586846ce45e02ede3a1c
+# b4f73e098c66aea08d9b9f0fdca2b1ef
 
 CACHE:
 /Portfolio/?8077dd4d38cf40cc31b3c70d764c554e
 /Portfolio/screen.css?caf1fa39db45362666cf7f66226bcf10
 /Portfolio/lib.js?ea73a79291b7038526a7f1f80adfd56a
-/Portfolio/app.js?60de19fe9e4d95662acc30cc1d0b4aee
+/Portfolio/app.js?6de42bba2281e694d138c02ff3490272
 
 FALLBACK:
 /Portfolio/ /Portfolio/?8077dd4d38cf40cc31b3c70d764c554e
 /Portfolio/screen.css /Portfolio/screen.css?caf1fa39db45362666cf7f66226bcf10
 /Portfolio/lib.js /Portfolio/lib.js?ea73a79291b7038526a7f1f80adfd56a
-/Portfolio/app.js /Portfolio/app.js?60de19fe9e4d95662acc30cc1d0b4aee
+/Portfolio/app.js /Portfolio/app.js?6de42bba2281e694d138c02ff3490272
 
 NETWORK:
 /Portfolio/app.manifest
