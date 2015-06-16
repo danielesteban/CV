@@ -1,0 +1,20 @@
+CACHE MANIFEST
+
+# 83fb7e20d1833bf46f176ad02950d29f
+
+CACHE:
+/Portfolio/projects/3DPixels/?5bae1f13ed676360f3772683bd7237b3
+/Portfolio/projects/3DPixels/screen.css?7d343cc5be570178a4d418e9fad0a50e
+/Portfolio/projects/3DPixels/lib.js?65c7e48b86fafed9f7875c29745233d9
+/Portfolio/projects/3DPixels/app.js?df982040681afd80c92c50f0081cfd2c
+
+FALLBACK:
+/Portfolio/projects/3DPixels/ /Portfolio/projects/3DPixels/?5bae1f13ed676360f3772683bd7237b3
+/Portfolio/projects/3DPixels/screen.css /Portfolio/projects/3DPixels/screen.css?7d343cc5be570178a4d418e9fad0a50e
+/Portfolio/projects/3DPixels/lib.js /Portfolio/projects/3DPixels/lib.js?65c7e48b86fafed9f7875c29745233d9
+/Portfolio/projects/3DPixels/app.js /Portfolio/projects/3DPixels/app.js?df982040681afd80c92c50f0081cfd2c
+
+NETWORK:
+/Portfolio/projects/3DPixels/app.manifest
+/Portfolio/projects/3DPixels/fonts/
+*
