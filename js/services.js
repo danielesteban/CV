@@ -73,6 +73,21 @@ value('projects', [
 			'El servidor del juego es un servicio de <a href="https://nodejs.org/" target="_blank">Node.js</a> y está también programado en JavaScript, lo que permite la reusabilidad de gran parte de la lógica y evita gran parte de los errores de paridad entre servidor y cliente, ya que la gran mayoría del código está compartido entre ambos.',
 			'Este tipo de aplicaciones requieren un corto tiempo de respuesta y una comunicación bidireccional, de ahí que el protocolo de comunicación esté envuelto en WebSockets con ayuda de la librería <a href="https://github.com/sockjs/sockjs-client">SockJS</a>. Esto nos otorga el canal de comunicación más rápido disponible, degradando desde WebSockets hasta HTTP Polling.'
 		]
+	},
+	{
+		url: '3DPixels',
+		title: '3DPixels',
+		iframe: 'projects/3DPixels/',
+		desktop: 'projects/3DPixels/',
+		android: 'http://danielesteban.github.io/Portfolio/projects/3DPixels.apk',
+		tags: [
+			'JavaScript', 'THREE.js', 'Cordova (Phonegap)', 'Android'
+		],
+		description: [
+			'Este prototipo es un editor de <a href="https://en.wikipedia.org/wiki/Pixel_art" target="_blank">Pixel Art</a> con una visualización en 3D.',
+			'Está programado en JavaScript y utiliza la librería <a href="http://threejs.org/" target="_blank">THREE.js</a> como motor de rendering.',
+			'El GUI está implementado con <a href="https://angularjs.org/">AngularJS</a>.'
+		]
 	}
 ])
 .factory('arrayShuffle', function() {
