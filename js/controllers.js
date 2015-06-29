@@ -20,8 +20,18 @@ angular.module('Portfolio.controllers', [])
 	$scope.project.iframe && $timeout(function() {
 		$scope.iframe = $sce.trustAsResourceUrl($scope.project.iframe);
 	}, 500);
+
+	var resize = function(e) {
+			$scope.mobile = ($window.innerWidth <= 1224);
+			e && $scope.$apply();
+		};
+
+	resize();
+	$window.addEventListener('resize', resize, false);
+
 	$rootScope.$broadcast('activeProject', $scope.project);
 	$scope.$on('$destroy', function() {
+		$window.removeEventListener('resize', resize, false);
 		$rootScope.$broadcast('activeProject', null);
 	});
 });

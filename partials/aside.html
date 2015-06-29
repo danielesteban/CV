@@ -1,12 +1,12 @@
 <h1>
-	<a href="#/">Daniel Esteban Nombela</a>
+	<a data-ng-click="click('/')">Daniel Esteban Nombela</a>
 </h1>
 <nav>
 	<li class="header">
 		Prototipos
 	</li>
 	<li data-ng-class-odd="'odd'" data-ng-class="{active: active === project.url}" data-ng-repeat="project in projects">
-		<a href="#/project/{{project.url}}">{{project.shortTitle || project.title}}</a>
+		<a data-ng-click="click('project/' + project.url)">{{project.shortTitle || project.title}}</a>
 	</li>
 </nav>
 <footer>
@@ -15,3 +15,6 @@
 		<span>dani@gatunes.com</span>
 	</a>
 </footer>
+<a class="toggle" data-ng-click="open = !open">
+	<i class="fa fa-fw ng-class:{'fa-list': !open, 'fa-times': open}"></i>
+</a>

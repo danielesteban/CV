@@ -1,7 +1,7 @@
 <h1>
 	{{project.title}}
 </h1>
-<div class="deviceWrap ng-class:{portrait:project.portrait}">
+<div data-ng-if="!mobile" class="deviceWrap ng-class:{portrait:project.portrait}">
 	<div class="device">
 		<iframe data-ng-if="iframe" data-ng-src="{{iframe}}"></iframe>
 		<slides data-ng-if="project.slides" data-slides="project.slides"></slides>

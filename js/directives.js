@@ -2,7 +2,7 @@
 
 /* Directives */
 angular.module('Portfolio.directives', [])
-.directive('aside', function($window, projects) {
+.directive('aside', function($window, $location, projects) {
 	var asideWidth = 200,
 		triangleSize = 16,
 		triangleHalfSize = triangleSize / 2;
@@ -16,6 +16,12 @@ angular.module('Portfolio.directives', [])
 				if(project) scope.active = project.url;
 				else delete scope.active;
 			});
+
+			scope.open = false;
+			scope.click = function(url) {
+				$location.path(url);
+				scope.open = false;
+			};
 
 			var canvas = angular.element('<canvas>')[0],
 				canvasContext = canvas.getContext('2d'),
